@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream 5</title>
+  </head>
+  <body class="bg-dark">
+    <header class="headerbody">
+      <section
+        class="headerbody d-flex justify-content-center align-items-center"
+      >
+        <div>
+          <h1 class="text-primary fw-bold ps-4">Dream 5</h1>
+          <p class="text-white">Select Your Dream 5 Players...</p>
+        </div>
+      </section>
+    </header>
+
+    <!-- ------
+    Main Section 
+  --------- -->
+
+    <section class="main-section h-100 d-flex mt-4 bg-dark">
+      <!----------------
+         Player Grib Section 
+        --------------- -->
+      <div class="player-grid">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/images/player-1.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5
+                  class="card-title d-flex justify-content-center fw-bold text-white"
+                >
+                  Lionel Messi
+                </h5>
+                <p class="card-text d-flex justify-content-center text-white">
+                  36 Goals . 120 Assists
+                </p>
+                <button class="btn btn-primary">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/images/player-2.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5
+                  class="card-title d-flex justify-content-center fw-bold text-white"
+                >
+                  Neymar Jr
+                </h5>
+                <p class="card-text d-flex justify-content-center text-white">
+                  36 Goals . 120 Assists
+                </p>
+                <button class="btn btn-primary">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/images/player-3.png" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5
+                  class="card-title d-flex justify-content-center fw-bold text-white"
+                >
+                  Kylian Mbappé
+                </h5>
+                <p class="card-text d-flex justify-content-center text-white">
+                  36 Goals . 120 Assists
+                </p>
+                <button class="btn btn-primary">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/images/player-4.png" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5
+                  class="card-title d-flex justify-content-center fw-bold text-white"
+                >
+                  Vítor Machado
+                </h5>
+                <p class="card-text d-flex justify-content-center text-white">
+                  36 Goals . 120 Assists
+                </p>
+                <button class="btn btn-primary">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/images/player-5.png" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5
+                  class="card-title d-flex justify-content-center fw-bold text-white"
+                >
+                  Sergio Ramos
+                </h5>
+                <p class="card-text d-flex justify-content-center text-white">
+                  36 Goals . 120 Assists
+                </p>
+                <button class="btn btn-primary">SELECT</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="/images/player-6.png" class="card-img-top" alt="..." />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5
+                  class="card-title d-flex justify-content-center fw-bold text-white"
+                >
+                  Renato Sanches
+                </h5>
+                <p class="card-text d-flex justify-content-center text-white">
+                  36 Goals . 120 Assists
+                </p>
+                <button class="btn btn-primary">SELECT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-------
+         Caculation Section
+        ---------------  -->
+
+      <div class="calculation-part">
+        <!--
+           selected-players-list
+           -->
+        <div class="selected-players-list text-white mb-4">
+          <header class="d-flex justify-content-center">
+            <h4 class="text-white mt-2">Selected - V</h4>
+          </header>
+          <!-- list  -->
+          <div id="selected-list"></div>
+        </div>
+
+        <!-- 
+          budget
+         -->
+
+        <div class="budget text-white mt-4">
+          <header class="d-flex justify-content-center">
+            <h4 class="text-white mt-2 mb-3">Budget</h4>
+          </header>
+
+          <!-- -----
+            Budget container 
+          -------- -->
+
+          <section class="mt-4 d-flex flex-column ms-3 me-3">
+            <div class="d-flex justify-content-between">
+              <p class="mb-0 pb-0">Per Player</p>
+              <input type="text" />
+            </div>
+            <button class="btn btn-primary mt-3 mb-3">Calculate</button>
+            <div class="d-flex justify-content-between w-50 mt-2">
+              <p class="">Player Expenses</p>
+              <p class="">$<span>00</span></p>
+            </div>
+          </section>
+          <section class="mt-4 d-flex flex-column ms-3 me-3">
+            <div class="d-flex justify-content-between">
+              <p class="mb-0 pb-0">Manager</p>
+              <input type="text" />
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+              <p class="mb-0 pb-0">Coach</p>
+              <input type="text" />
+            </div>
+
+            <button class="btn btn-primary mt-4 mb-3">Calculate Total</button>
+            <div class="d-flex justify-content-between w-50 mt-2">
+              <p class="">Total Expences</p>
+              <p class="">$<span>00</span></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+      <h2 class="text-white fw-bold">dfhdghsfghxfgx</h2>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
