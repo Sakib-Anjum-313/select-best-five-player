@@ -44,6 +44,7 @@
               />
               <div class="card-body d-flex flex-column justify-content-center">
                 <h5
+                  id="messi"
                   class="card-title d-flex justify-content-center fw-bold text-white"
                 >
                   Lionel Messi
@@ -51,7 +52,13 @@
                 <p class="card-text d-flex justify-content-center text-white">
                   36 Goals . 120 Assists
                 </p>
-                <button class="btn btn-primary">SELECT</button>
+                <button
+                  onclick="playerSelection('Lionel Messi', 'messi-selected')"
+                  id="messi-selected"
+                  class="btn btn-primary"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -71,7 +78,13 @@
                 <p class="card-text d-flex justify-content-center text-white">
                   36 Goals . 120 Assists
                 </p>
-                <button class="btn btn-primary">SELECT</button>
+                <button
+                  id="neymar-selected"
+                  onclick="playerSelection('Neymar Jr','neymar-selected')"
+                  class="btn btn-primary"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -87,7 +100,13 @@
                 <p class="card-text d-flex justify-content-center text-white">
                   36 Goals . 120 Assists
                 </p>
-                <button class="btn btn-primary">SELECT</button>
+                <button
+                  id="Kylian-selected"
+                  onclick="playerSelection('Kylian Mbappé','Kylian-selected')"
+                  class="btn btn-primary"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -103,7 +122,13 @@
                 <p class="card-text d-flex justify-content-center text-white">
                   36 Goals . 120 Assists
                 </p>
-                <button class="btn btn-primary">SELECT</button>
+                <button
+                  id="Vítor-selected"
+                  onclick="playerSelection('Vítor Machado','Vítor-selected')"
+                  class="btn btn-primary"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -119,7 +144,13 @@
                 <p class="card-text d-flex justify-content-center text-white">
                   36 Goals . 120 Assists
                 </p>
-                <button class="btn btn-primary">SELECT</button>
+                <button
+                  id="Ramos-selected"
+                  onclick="playerSelection('Sergio Ramos','Ramos-selected')"
+                  class="btn btn-primary"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -135,7 +166,13 @@
                 <p class="card-text d-flex justify-content-center text-white">
                   36 Goals . 120 Assists
                 </p>
-                <button class="btn btn-primary">SELECT</button>
+                <button
+                  id="Renato-selected"
+                  onclick="playerSelection('Renato Sanches','Renato-selected')"
+                  class="btn btn-primary"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -155,7 +192,9 @@
             <h4 class="text-white mt-2">Selected - V</h4>
           </header>
           <!-- list  -->
-          <div id="selected-list"></div>
+          <div id="">
+            <ol id="selected-list" class="ms-4 mt-3"></ol>
+          </div>
         </div>
 
         <!-- 
@@ -213,5 +252,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/selectedList.js"></script>
   </body>
 </html>
