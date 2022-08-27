@@ -20,7 +20,7 @@
       >
         <div>
           <h1 class="text-primary fw-bold ps-4">Dream 5</h1>
-          <p class="text-white">Select Your Dream 5 Players...</p>
+          <p class="text-white">Buy Your Dream 5 Players.....</p>
         </div>
       </section>
     </header>
@@ -198,7 +198,7 @@
         </div>
 
         <!-- 
-          budget
+          budget title
          -->
 
         <div class="budget text-white mt-4">
@@ -207,34 +207,41 @@
           </header>
 
           <!-- -----
-            Budget container 
+            Budget calculation 
           -------- -->
 
           <section class="mt-4 d-flex flex-column ms-3 me-3">
             <div class="d-flex justify-content-between">
               <p class="mb-0 pb-0">Per Player</p>
-              <input type="text" />
+              <input id="per-player-input" type="text" />
             </div>
-            <button class="btn btn-primary mt-3 mb-3">Calculate</button>
+            <button id="calculate" class="btn btn-primary fw-bold mt-3 mb-3">
+              Calculate
+            </button>
             <div class="d-flex justify-content-between w-50 mt-2">
               <p class="">Player Expenses</p>
-              <p class="">$<span>00</span></p>
+              <p class="">$<span id="player-expence">00</span></p>
             </div>
           </section>
           <section class="mt-4 d-flex flex-column ms-3 me-3">
             <div class="d-flex justify-content-between">
               <p class="mb-0 pb-0">Manager</p>
-              <input type="text" />
+              <input id="manager-cost" type="text" />
             </div>
             <div class="d-flex justify-content-between mt-3">
               <p class="mb-0 pb-0">Coach</p>
-              <input type="text" />
+              <input id="coach-cost" type="text" />
             </div>
 
-            <button class="btn btn-primary mt-4 mb-3">Calculate Total</button>
+            <button
+              id="calculate-total"
+              class="btn btn-primary fw-bold mt-4 mb-3"
+            >
+              Calculate Total
+            </button>
             <div class="d-flex justify-content-between w-50 mt-2">
               <p class="">Total Expences</p>
-              <p class="">$<span>00</span></p>
+              <p class="">$<span id="total-cost">00</span></p>
             </div>
           </section>
         </div>
@@ -244,7 +251,9 @@
     <!-- footer section  -->
 
     <footer>
-      <h2 class="text-white fw-bold">dfhdghsfghxfgx</h2>
+      <div class="d-flex justify-content-center">
+        <h5 class="text-white fw-bold">Copyright@Dream5 2022</h5>
+      </div>
     </footer>
 
     <script
@@ -254,5 +263,7 @@
     ></script>
     <script src="js/utilities.js"></script>
     <script src="js/selectedList.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/calculateTotal.js"></script>
   </body>
 </html>

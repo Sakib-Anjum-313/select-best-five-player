@@ -34,3 +34,7 @@ body {
   background: #000000;
   height: 514px;
 }
+
+.btn.btn-primary[disabled] {
+  background-color: lightgrey;
+}

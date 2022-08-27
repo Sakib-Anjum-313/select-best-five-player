@@ -1,33 +1,28 @@
 
 
-// document.getElementById('messi-selected').addEventListener('click', function(){
+function playerSelection (playerName, btnId){
 
+    const selectedPlayer= playerName;
 
-//     const selectedPlayer= document.getElementById('messi').innerText;
+    const selectedList= document.getElementById('selected-list');
 
-//     const selectedList= document.getElementById('selected-list');
+    const selectedListLi= document.createElement('li');
+    selectedListLi.innerText= selectedPlayer;
 
-//     selectedListLi= document.createElement('li');
-    
-//     selectedListLi.innerText= selectedPlayer;
+    selectedList.appendChild(selectedListLi);
 
-//     selectedList.appendChild(selectedListLi);
+    let selectedListOl= document.querySelectorAll("#selected-list li");
+    selectedListlength= selectedListOl.length;
 
-//     selectedListOl= document.querySelectorAll("#selected-list li");
-//     selectedListlength= selectedListOl.length;
-//     console.log(selectedListlength);
+    // console.log(selectedListOl);
+    // console.log(btnId);
 
-
-
-//     if (selectedListlength <= 5){
-//         document.getElementById("messi-selected").disabled = true;
-//     }
-
-//     else {
-//         document.getElementById("selected-list").lastChild.remove();
-//         alert(" You can't selecte more than 5!!!!")
-//     }
-
-
-    
-// })
+    if (selectedListlength <= 5){
+        document.getElementById(btnId).disabled = true;
+    }
+    else {
+        document.getElementById("selected-list").lastChild.remove();
+        selectedListlength -=1;
+        alert(" You can't select more than 5 Players!!!!")
+    }  
+}
