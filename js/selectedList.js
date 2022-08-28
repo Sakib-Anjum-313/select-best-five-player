@@ -1,5 +1,3 @@
-
-
 function playerSelection (playerName, btnId){
 
     const selectedPlayer= playerName;
@@ -14,8 +12,6 @@ function playerSelection (playerName, btnId){
     let selectedListOl= document.querySelectorAll("#selected-list li");
     selectedListlength= selectedListOl.length;
 
-    // console.log(selectedListOl);
-    // console.log(btnId);
 
     if (selectedListlength <= 5){
         document.getElementById(btnId).disabled = true;
