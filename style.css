@@ -4,17 +4,12 @@
   background: #000000;
 }
 
-body {
-  /* background: #000000; */
-}
-
 .player-grid {
   padding-right: 50px;
   padding-left: 70px;
 }
 
 .calculation-part {
-  /* background: #000000; */
   width: 50%;
   height: 100%;
   margin-right: 20px;
@@ -37,4 +32,10 @@ body {
 
 .btn.btn-primary[disabled] {
   background-color: lightgrey;
+}
+
+.btn.btn-primary {
+  border: none;
+  font-size: medium;
+  font-weight: 400;
 }
