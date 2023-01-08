@@ -213,7 +213,7 @@
           <section class="mt-4 d-flex flex-column ms-3 me-3">
             <div class="d-flex justify-content-between">
               <p class="mb-0 pb-0">Per Player</p>
-              <input id="per-player-input" type="text" />
+              <input type="number" id="per-player-input" type="text" />
             </div>
             <button id="calculate" class="btn btn-primary fw-bold mt-3 mb-3">
               Calculate
@@ -226,11 +226,17 @@
           <section class="mt-4 d-flex flex-column ms-3 me-3">
             <div class="d-flex justify-content-between">
               <p class="mb-0 pb-0">Manager</p>
-              <input id="manager-cost" type="text" />
+              <input
+                type="number"
+                id="manager-cost"
+                type="text"
+                required
+                value="0"
+              />
             </div>
             <div class="d-flex justify-content-between mt-3">
               <p class="mb-0 pb-0">Coach</p>
-              <input id="coach-cost" type="text" />
+              <input type="number" id="coach-cost" type="text" value="0" />
             </div>
 
             <button
